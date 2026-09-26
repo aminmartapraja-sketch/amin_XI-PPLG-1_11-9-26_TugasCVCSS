@@ -1,0 +1,523 @@
+
+/* =====================================================
+   CSS DASAR - CV MUHAMAD AMINUDIN MARTAPRAJA
+
+   Materi:
+   1. Insert CSS
+   2. Color
+   3. Box Model
+   4. Comment
+   5. Selector
+   6. Display Mode
+   7. Position
+   8. Grid
+   9. Media Query
+   ===================================================== */
+
+
+/* =====================================================
+   1. SELECTOR
+   ===================================================== */
+
+/* Selector universal */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Selector element */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    background-color: #f1f5f9;
+
+    color: #1e293b;
+
+    line-height: 1.6;
+}
+
+
+/* =====================================================
+   2. COLOR
+   ===================================================== */
+
+.header {
+    background-color: #2563eb;
+
+    color: white;
+}
+
+
+h1 {
+    color: white;
+}
+
+
+h2 {
+    color: #2563eb;
+
+    margin-bottom: 10px;
+}
+
+
+/* =====================================================
+   3. BOX MODEL
+   margin = jarak luar
+   padding = jarak dalam
+   border = garis tepi
+   ===================================================== */
+
+.container {
+    width: 90%;
+
+    max-width: 1000px;
+
+    /* Box Model */
+    margin: 30px auto;
+}
+
+
+.card {
+    background-color: white;
+
+    /* Box Model */
+    padding: 25px;
+
+    margin-bottom: 25px;
+
+    border: 1px solid #e2e8f0;
+
+    border-radius: 12px;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+
+/* =====================================================
+   HEADER
+   ===================================================== */
+
+.header {
+    padding: 35px 5%;
+}
+
+
+.profile {
+    display: flex;
+
+    align-items: center;
+
+    gap: 25px;
+
+    max-width: 1000px;
+
+    margin: auto;
+}
+
+
+/* =====================================================
+   4. DISPLAY MODE
+   display: flex digunakan untuk mengatur posisi
+   gambar dan biodata secara horizontal.
+   ===================================================== */
+
+.profile-img {
+    width: 110px;
+
+    height: 110px;
+
+    display: block;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 4px solid white;
+}
+
+
+/* =====================================================
+   PARAGRAPH
+   ===================================================== */
+
+.profile p {
+    margin-top: 5px;
+
+    color: #dbeafe;
+}
+
+
+/* =====================================================
+   TABLE
+   ===================================================== */
+
+table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    margin-top: 15px;
+}
+
+
+th,
+td {
+    padding: 12px;
+
+    border: 1px solid #cbd5e1;
+
+    text-align: left;
+}
+
+
+th {
+    background-color: #2563eb;
+
+    color: white;
+}
+
+
+tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+
+
+/* =====================================================
+   5. GRID
+   ===================================================== */
+
+.grid-container {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 25px;
+}
+
+
+/* =====================================================
+   LIST
+   ===================================================== */
+
+ol,
+ul {
+    padding-left: 25px;
+}
+
+
+li {
+    margin-bottom: 8px;
+}
+
+
+/* =====================================================
+   LINK / SELECTOR CLASS
+   ===================================================== */
+
+a {
+    color: #2563eb;
+
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+
+a:hover {
+    color: #1d4ed8;
+
+    text-decoration: underline;
+}
+
+
+/* =====================================================
+   6. POSITION
+   ===================================================== */
+
+/* Position relative digunakan sebagai acuan posisi */
+.contact {
+    position: relative;
+}
+
+
+/* =====================================================
+   TOMBOL WHATSAPP
+   ===================================================== */
+
+.button {
+    display: inline-block;
+
+    position: relative;
+
+    background-color: #2563eb;
+
+    color: white;
+
+    padding: 10px 18px;
+
+    margin-left: 10px;
+
+    border-radius: 8px;
+
+    transition: 0.3s;
+}
+
+
+.button:hover {
+    background-color: #1d4ed8;
+
+    color: white;
+
+    text-decoration: none;
+
+    /* Position */
+    top: -2px;
+}
+
+
+/* =====================================================
+   7. KOMENTAR
+   ===================================================== */
+
+.comment-description {
+    color: #64748b;
+
+    margin-bottom: 20px;
+}
+
+
+.comment-form {
+    width: 100%;
+}
+
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+
+.form-group label {
+    display: block;
+
+    margin-bottom: 7px;
+
+    font-weight: bold;
+
+    color: #1e293b;
+}
+
+
+/* Input dan textarea */
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+
+    padding: 12px 15px;
+
+    border: 1px solid #cbd5e1;
+
+    border-radius: 8px;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 14px;
+
+    outline: none;
+
+    transition: 0.3s;
+}
+
+
+/* Textarea */
+
+.form-group textarea {
+    resize: vertical;
+}
+
+
+/* Efek ketika input dipilih */
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #2563eb;
+
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+
+/* =====================================================
+   TOMBOL KOMENTAR
+   ===================================================== */
+
+.comment-button {
+    background-color: #2563eb;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 8px;
+
+    padding: 11px 20px;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.comment-button:hover {
+    background-color: #1d4ed8;
+
+    transform: translateY(-2px);
+}
+
+
+/* =====================================================
+   FOOTER
+   ===================================================== */
+
+footer {
+    text-align: center;
+
+    background-color: #0f172a;
+
+    color: white;
+
+    padding: 20px;
+
+    margin-top: 40px;
+}
+
+
+/* =====================================================
+   8. MEDIA QUERY
+   Tampilan untuk layar HP/tablet
+   ===================================================== */
+
+@media screen and (max-width: 768px) {
+
+    .header {
+        padding: 25px 5%;
+    }
+
+
+    .profile {
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+
+    .profile-img {
+        width: 100px;
+
+        height: 100px;
+    }
+
+
+    /*
+       Grid berubah dari 2 kolom
+       menjadi 1 kolom pada layar kecil.
+    */
+
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+
+
+    .container {
+        width: 92%;
+
+        margin: 20px auto;
+    }
+
+
+    .card {
+        padding: 20px;
+    }
+
+
+    /*
+       Tabel dibuat lebih kecil agar
+       tetap nyaman dilihat di HP.
+    */
+
+    th,
+    td {
+        padding: 8px;
+
+        font-size: 14px;
+    }
+
+
+    /* Tombol WhatsApp */
+
+    .button {
+        display: block;
+
+        width: fit-content;
+
+        margin-left: 0;
+
+        margin-top: 10px;
+    }
+
+
+    /* Tombol komentar */
+
+    .comment-button {
+        width: 100%;
+    }
+
+}
+
+
+/* =====================================================
+   MEDIA QUERY UNTUK HP KECIL
+   ===================================================== */
+
+@media screen and (max-width: 480px) {
+
+    h1 {
+        font-size: 25px;
+    }
+
+
+    h2 {
+        font-size: 21px;
+    }
+
+
+    body {
+        font-size: 14px;
+    }
+
+
+    .card {
+        padding: 15px;
+    }
+
+
+    th,
+    td {
+        font-size: 12px;
+
+        padding: 6px;
+    }
+
+
+    .form-group input,
+    .form-group textarea {
+        font-size: 13px;
+    }
+
+}
+
